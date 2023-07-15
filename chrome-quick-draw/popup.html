@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Draw and Erase</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+      cursor: crosshair;
+    }
+  </style>
+  <script src="popup.js" type="module"></script>
+</head>
+<body>
+  <canvas id="canvas" width="850" height="700"></canvas>
+  <div>
+    <button id="eraseButton">Erase</button>
+    <button id="brushButton">Brush</button>
+    <button id="clearButton">Clear</button>
+    <label for="brushSize">Brush Size:</label>
+    <input type="range" id="brushSize" min="1" max="20" value="5">
+    <label for="colorPicker">Color:</label>
+    <input type="color" id="colorPicker" value="#000000">
+  </div>
+</body>
+</html>
